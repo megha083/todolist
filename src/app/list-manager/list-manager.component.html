@@ -1,0 +1,22 @@
+<style>
+    .title{
+        margin-left: 20px;
+    }
+    .todo-item{
+      width: 40%;
+      margin-top: 20px;
+    }
+</style>
+
+<h1 class="title">
+    {{ title }}
+  </h1>
+ 
+  <app-input (submit)="addItem($event)"></app-input>
+  <div class="todo-item">
+  <ul>
+    <li *ngFor="let item of todoList;let i=index">
+      <app-item [todoItem]="item" (remove)="removeItem($event)"></app-item>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,23 @@
+<style>
+    .input{
+        margin-left: 20px;
+        width: 400px;
+        height: 35px;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    .btn{
+        margin-top: -5px;
+    }
+    .top-title{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+</style>
+
+<input type="text" class="input" (keypress)="keyPressAlpha($event)" #inputElement>
+    <button (click)="changeTitle(inputElement.value)" type="button" class="btn btn-primary">
+      Add
+    </button>
+    <p class="top-title">All Tasks</p>

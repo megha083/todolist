@@ -1,0 +1,23 @@
+<style>
+  .btn{
+    margin-left: 600px;
+    margin-bottom: 50px;
+    margin-top: -15px;
+  }
+  .form-check-input{
+    margin-top: -17px;
+  }
+  
+</style>
+<div class="todo-item">
+  {{ todoItem.title }}
+</div>
+
+<input type="checkbox" class="form-check-input"/>
+
+<div class="btnnn">
+ <button class="btn btn-danger" (click)="removeItem()">
+      Delete
+    </button>
+</div>
+
